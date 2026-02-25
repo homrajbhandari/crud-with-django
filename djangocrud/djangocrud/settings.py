@@ -25,12 +25,7 @@ SECRET_KEY = 'django-insecure-ke9g42^2*n$6dow4l#etiy=)0fyi(#0#yty6u#pqe7(+8*@d4w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-import os
-
-# Security settings for production
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
-
+ALLOWED_HOSTS = ['crud-with-django-sqz1.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
